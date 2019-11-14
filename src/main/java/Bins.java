@@ -1,11 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.TreeMap;
 
 
 public class Bins {
 
-    private Map<Integer, Integer> binMap = new HashMap<Integer, Integer>();
+    private TreeMap<Integer, Integer> binMap = new TreeMap<Integer, Integer>();
 
 
     public Bins(Integer minimum, Integer maximum){
@@ -20,6 +20,7 @@ public class Bins {
 
 
     public void incrementBin(Integer bin, Integer result){
+
         binMap.put(bin, result++);
     }
 
